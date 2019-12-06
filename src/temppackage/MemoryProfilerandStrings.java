@@ -89,9 +89,16 @@ public class MemoryProfilerandStrings {
 It follows that for any two strings s and t, s.intern() == t.intern() is true if and only if s.equals(t) is true. 
 
 */
+						
+						a = setofdata[0];
+						b = setofdata[1];
+						c = setofdata[2];
+						 
+						/*
 						a = setofdata[0].intern();
 						b = setofdata[1].intern();
 						c = setofdata[2].intern();
+						 */
 						 // System.out.println("Here are some string data based on file data" + a + "___"
 						 // + b + "___" + c + "___");
 						countofexcutions++;
@@ -128,9 +135,14 @@ It follows that for any two strings s and t, s.intern() == t.intern() is true if
 		if (!usingStringBuilder) {
 			for (int i = 0; i < numberofLoops; i++) {
 				for (int j = 0; j < arrayListOfStrings.size(); j++) {
-					a = getRandomString().toString();
-					b = getRandomString().toString();
-					c = getRandomString().toString();
+					/*
+					a = getRandomString().toString().intern();
+					b = getRandomString().toString().intern();
+					c = getRandomString().toString().intern();
+					*/
+					a = getRandomString().toString().intern();
+					b = getRandomString().toString().intern();
+					c = getRandomString().toString().intern();
 					 //System.out.println("Here are some random string data based on random data " +
 					 // a + "___" + b + "___" + c + "___");
 					countofexcutions++;
